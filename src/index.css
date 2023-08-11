@@ -299,3 +299,15 @@ nav {
   color: var(--primary-500);
   padding-left: 1.5rem;
 }
+
+/* 200px/16 = 12.5rem */
+
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-links {
+  height: 12.5rem;
+}
