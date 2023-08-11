@@ -1,4 +1,5 @@
 import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+
 export const links = [
   {
     id: 1,
@@ -27,7 +28,7 @@ export const links = [
   },
 ];
 
-export const social = [
+export const socialLinks = [
   {
     id: 1,
     url: 'https://www.twitter.com',
