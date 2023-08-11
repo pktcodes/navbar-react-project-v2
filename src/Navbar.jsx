@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 import { links, socialLinks } from './data';
 
@@ -7,9 +7,16 @@ import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
+  const linksRef = useRef(null);
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
+  };
+
+  const linksContainerStyles = {
+    height: showLinks
+      ? `${linksRef.current.getBoundingClientRect().height}px`
+      : `0px`,
   };
 
   return (
@@ -22,12 +29,8 @@ const Navbar = () => {
           </button>
         </div>
 
-        <div
-          className={
-            showLinks ? 'links-container show-links' : 'links-container'
-          }
-        >
-          <ul className="links">
+        <div className="links-container" style={linksContainerStyles}>
+          <ul className="links" ref={linksRef}>
             {links.map((link) => {
               const { id, url, text } = link;
               return (
