@@ -306,3 +306,9 @@ nav {
   overflow: hidden;
   transition: var(--transition);
 }
+
+/* Why Links Container Example CSS */
+.links {
+  overflow: hidden;
+  transition: var(--transition);
+}
