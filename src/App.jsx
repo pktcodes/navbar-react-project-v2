@@ -4,8 +4,7 @@ import WhyLinksContainer from './WhyLinksContainerExample';
 const App = () => {
   return (
     <main>
-      {/* <Navbar /> */}
-      <WhyLinksContainer />
+      <Navbar />
     </main>
   );
 };

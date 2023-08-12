@@ -308,7 +308,63 @@ nav {
 }
 
 /* Why Links Container Example CSS */
-.links {
+/* .links {
   overflow: hidden;
   transition: var(--transition);
+} */
+
+.social-icons {
+  display: none;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-header {
+    padding: 0;
+  }
+
+  .nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 1rem;
+  }
+
+  .links-container {
+    height: auto !important;
+  }
+
+  .links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .links a {
+    padding: 0.5rem 0px;
+  }
+
+  .links a:hover {
+    background: transparent;
+    padding: 0;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .social-icons a {
+    color: var(--primary-500);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  .social-icons a:hover {
+    color: var(--primary-300);
+  }
 }
