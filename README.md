@@ -20,4 +20,4 @@ Netlify
 
 ---
 
-*Note: I have developed this project ~ [12] as part of React and Projects Course taught by John Smilga.*
+_Note: I have developed this project ~ [12] as part of React 18 Tutorial and Projects Course (2023) taught by John Smilga._
